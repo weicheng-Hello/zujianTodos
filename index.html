@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<style>
+    [v-cloak]{
+        display: none;
+    }
+</style>
+<body>
+
+    <div id="app" v-cloak>
+        <div class="todos">
+            <todos-header></todos-header>
+            <todos-content></todos-content>
+            <!-- <todos-footer></todos-footer> -->
+        </div>
+    </div>
+    <script src="./vue.js"></script>
+    <script src="./utils/utils.js"></script>
+    <script src="./component/todos-header.js"></script>
+    <script src="./component/todos-content.js"></script>
+    <!-- <script src="./component/todos-footer.js"></script> -->
+    <script src="./main.js"></script>
+    <script src="./router/router.js"></script>
+</body>
+</html>

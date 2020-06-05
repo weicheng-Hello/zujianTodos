@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f5f5f5;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+div.todos {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.todos h1 {
+  font-size: 100px;
+  font-weight: 100;
+  color: rgba(175, 47, 47, 0.15);
+}
+div.todos div.title {
+  position: relative;
+}
+div.todos div.title input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 22px;
+  left: -2px;
+}
+div.todos div.title input[type="text"] {
+  padding-left: 50px ;
+  margin-left: -20px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  font-size: 24px;
+  outline: medium;
+  box-shadow: 2px 3px 3px #c8c8c8;
+}
+div.todos div.title .updown {
+  list-style: none;
+  position: absolute;
+  z-index: 100;
+}
+div.todos div.title .updown-content {
+  width: 532px;
+  height: 61px;
+  margin-left: -20px;
+  line-height: 61px;
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding-left: 20px;
+  background-color: #ddd;
+}
+div.todos div.title input::-webkit-input-placeholder {
+  color: #ddd;
+}
+div.todos div.content {
+  width: 550px;
+  height: 60px;
+  border: 1px solid #ddd;
+  margin-left: -21px;
+  background-color: white;
+  position: relative;
+  line-height: 60px;
+}
+div.todos div.content input[type="checkbox"] {
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+div.todos div.content .content-item {
+  position: absolute;
+  left: 60px;
+  text-decoration: none;
+}
+div.todos div.content .active {
+  text-decoration: line-through;
+  color: #d9d9d9;
+}
+div.todos div.content input[type="text"] {
+  outline: medium;
+  left: 46px;
+  width: 500px;
+  height: 57px;
+  position: absolute;
+}
+div.todos div.content .content-del {
+  width: 20px;
+  height: 2px;
+  background-color: #a85960;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  display: none;
+}
+div.todos div.content .content-del:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #a85960;
+  transform: rotate(-90deg);
+}
+div.todos .content:hover .content-del {
+  display: block;
+}
+div.todos div.footer {
+  width: 550px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  margin-left: -21px;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+}
+div.todos div.footer div.left {
+  margin-left: -30px;
+}
+div.todos div.footer div.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.todos div.footer div.center .center-item-all {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+div.todos div.footer div.center .center-item-active {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+div.todos div.footer div.center .center-item-finish {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+div.todos div.footer div.center .change {
+  border: 1px solid rgba(175, 47, 47, 0.15);
+}
+div.todos div.footer div.right {
+  margin-right: -30px;
+}
